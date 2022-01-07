@@ -1,0 +1,297 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+html{
+	background:  #F6FFEA;
+}
+body{
+	
+}
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 70px;
+	background: #fff;
+	border-bottom: 1px solid rgba(183,181,181,0.4);
+}
+.perfil-content{
+	position: absolute;
+	right: 0;
+	margin-right: 20px;
+}
+.perfil-content .perfil{
+	position: relative;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+.perfil img{
+	width: 45px;
+	height: 45px;
+	border-radius: 10px;
+	object-fit: cover;
+	margin-left: 15px;
+	border: 1px solid #05301a;
+}
+.main{
+	padding: 30px;
+	height: 100vh;
+	margin-left: 0px;
+	background:  #F6FFEA;
+	
+}
+
+.active-body{
+	margin-left: 0px;
+	
+}
+.content-principal{
+	margin-top: 60px;
+	
+}
+/*PARA CATALOGO SECCIONES*/
+
+.cs-content-principal h1{
+	margin-bottom: 30px;
+}
+.cs-content-principal .btn-crearSeccion-content{
+	margin-bottom: 30px;
+}
+.tables-content{
+	width: 100%;
+}
+/*DASHBOARD------------------------------------*/
+.dashboard{
+
+}
+/*PARA GESTION TRANSPORTE*/
+.table-trasnporte-content{
+	width: 100%;
+}
+
+/*PARA GESTIONAR REPORTES*/
+.reporte-content, .solucion-reporte-content{
+	margin-top: 30px;
+	width: 100%;
+	
+}
+.solucion-reporte-content{
+	margin-bottom: 50px;
+}
+.reporte-content table, .form-solucionario{
+	width: 100%;
+	margin: auto;
+}
+.btn-volver-content{
+	text-align: center;
+	margin: auto;
+}
+.reporte-content table img{
+	/*max-width: 100%;*/
+	max-height: 300px; 
+}
+.reporte-content table tr td:first-child{
+	font-weight: bold;
+	width: 160px;
+}
+/*PARA GESTION PEDIDOS TRANSPORTE*/
+.buscador-transportista{
+	width: 100%;
+}
+
+/*PARA GESTION PEDIDOS LOGISTICA--------------------*/
+.table-logistica-content{
+	margin-top: 30px;
+	
+	width: 100%;
+	padding: 10px;
+}
+.table-logistica-pedidos{
+	padding-top: 20px;
+}
+/*PARA GESTION PEDIDOS ALAMACEN--------------------*/
+.tablePedidosAlmacen-content{
+	margin-top: 30px;
+	
+	width: 100%;
+	padding: 10px;
+}
+.table-almacen-pedidos{
+	padding-top: 20px;
+	
+}
+/**/
+.table-almacen-pedidos thead,
+.table-logistica-pedidos thead{
+	background-color: rgba(80, 103, 81, 0.69);
+	color: #fff;
+}
+/**/
+.gestion-almacen-ops{
+	margin-top: 50px;
+	background: #fff;
+	display: flex;
+	padding: 0;
+	align-items: center;
+	border-bottom: 1px solid black;
+}
+.gestion-almacen-ops ul{
+	display: flex;
+	list-style: none;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.gestion-almacen-ops ul li {
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	color: black;
+	height: 100%;
+	font-weight: 600;
+	cursor: pointer;
+}
+.gestion-almacen-ops ul li:hover{
+	background:  #F6FFEA;
+
+}
+.active-gestion-almacen-op{
+	background:  #F6FFEA;
+	border: 1px solid black;
+	border-bottom: none;
+}
+
+.table-reporte-problemas-content {
+	
+}
+.esconder-table-content{
+	display: none;
+}
+/*PARA CATALOGO PRODUCTOS---------------------------------------*/
+.active-page-link{
+	background: rgba(69,71,69,0.30);
+}
+
+
+.btn-nuevoP-content{
+	margin-top: 30px;
+}
+.buscadores-content{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.buscadores-content .buscador-padre{
+	width: 50%;
+	padding: 10px;
+}
+.buscadores-content .buscador-hijo{
+	display: flex;
+	justify-content:space-around;
+	
+}
+.buscadores-content .buscador-hijo div{
+	width: 50%;
+	padding: 10px;
+}
+
+.table-crud thead tr{
+	background-color: rgba(80, 103, 81, 0.69);
+    color: #ffffff;
+    text-align: center;
+}
+.table-crud tbody tr{
+	cursor: pointer;
+}
+.paginacion{
+	display: flex;
+	justify-content: space-between;
+}
+.paginacion ul{
+	list-style: none;
+	display: flex;
+}
+/*MODAL INFO DEL PRODUCTO*/
+.info_producto_content tr td:first-child{
+	font-weight: bold;
+	text-align: left;
+}
+.info_producto_content tr td:last-child{
+	text-align: left;
+}
+.info_producto_content img{
+	height: 150px;
+	max-width: 200px;
+}
+.modal-backdrop
+{
+    opacity:0.5 !important;
+}
+/*--------------------------------------*/
+@media(min-width:576px){
+	
+	
+}
+@media(min-width:800px){
+	.main{
+		/*margin-left: 300px;*/
+		animation: despegar 0.5s forwards;
+	}
+	.active-body{
+		/*margin-left: 0px;*/
+		animation: pegar 0.5s forwards;
+	
+	}
+	
+	@keyframes pegar{
+		 0% {margin-left: 300px;}
+    	100% {margin-left: 0px;}
+	}
+	
+	@keyframes despegar{
+		0%{ margin-left: 0px;}
+		100%{margin-left: 300px;}
+	}
+	
+}
+@media(min-width:1200px){
+	/*.table-content div{
+		max-width: 75%;
+	}*/
+	.tables-content{
+		width: 60%;
+	}
+	.buscador-transportista{
+		width: 50%;
+	}
+}
+@media(min-width:1600px){
+	/*.table-content div{
+		max-width: 60%;
+	}*/
+
+	.buscadores-content{
+		width: 60%;
+	}
+	.crud-content .table-content{
+		width: 80%;
+	}
+	.tablePedidosAlmacen-content, .table-logistica-content, .table-trasnporte-content{
+		width: 80%;
+	}
+	.reporte-content table, .form-solucionario{
+		width: 60%;
+	}
+	.reporte-content h5{
+		text-align: center;
+	}
+}

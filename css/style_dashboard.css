@@ -1,0 +1,158 @@
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	transition: 0.2s all;
+}
+html{
+	background:  #F6FFEA;
+}
+body{
+	
+}
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 70px;
+	background: #fff;
+	border-bottom: 1px solid rgba(183,181,181,0.4);
+}
+.perfil-content{
+	position: absolute;
+	right: 0;
+	margin-right: 20px;
+}
+.perfil-content .perfil{
+	position: relative;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+.perfil img{
+	width: 45px;
+	height: 45px;
+	border-radius: 10px;
+	object-fit: cover;
+	margin-left: 15px;
+	border: 1px solid #05301a;
+}
+.main{
+	padding: 30px;
+	height: 100vh;
+	margin-left: 310px;
+	background:  #F6FFEA;
+	
+}
+.active-body{
+	margin-left: 0px;
+	
+}
+.content-principal{
+	margin-top: 60px;
+}
+
+.content-card{
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+	gap: 1.5rem;
+}
+.card{
+	height: 170px;
+	border-radius:10px;
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+	cursor: pointer;
+}
+.card:hover{
+	transform:scale(1.05,1.05);
+}
+.card .info{
+	font-size: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+}
+.card .info p:first-child{
+	margin-bottom: 15px;
+	font-weight: bold;
+	
+}
+.card .info p:last-of-type{
+	font-size: 60px;
+}
+.card .icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+}
+.card .icon i{
+	border-radius: 1rem;
+	padding: 20px;
+	font-size: 30px;
+}
+
+.content-tables{
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns:2fr 1fr;
+	gap: 1.5rem;
+	
+}
+.table-ventas-content,.table-productos-content{
+	padding: 20px;
+	border-radius:10px;
+	background: #fff;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+	font-size: 18px;
+}
+
+.table-dash{
+	margin-top: 20px;
+	width: 100%;
+	font-size: 20px;
+}
+
+.table-dash thead{
+	font-weight: bolder;
+}
+.table-dash td{
+	padding: 20px 10px;
+}
+.content-btn-ver{
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+}
+.btn-ver-pedidos{
+	margin: 10px;
+	background: #05301a;
+	padding: 10px;
+	border:none;
+	border-radius: 10px;
+	color:#fff;
+	width: 100px;
+	font-size: 16px;
+	cursor:pointer;
+}
+.btn-ver-pedidos:hover{
+	transform: scale(1.05);
+}
+
+@media(max-width:1250px){
+	.content-tables{
+		grid-template-columns:1fr;
+	}
+}
